@@ -1,5 +1,6 @@
 package project.by.stormnet.functional.entities.helpers;
 
+import org.openqa.selenium.WebElement;
 import project.by.stormnet.functional.entities.pages.SearchPage;
 
 public class SearchHelper extends AbstractHelper{
@@ -12,4 +13,6 @@ public class SearchHelper extends AbstractHelper{
     public int getAllResultsCount(){
         return Integer.parseInt(searchPage.getResultsCount().split(" ")[0]);
     }
+
+
 }

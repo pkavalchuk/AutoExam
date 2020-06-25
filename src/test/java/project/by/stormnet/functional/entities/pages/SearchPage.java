@@ -1,5 +1,7 @@
 package project.by.stormnet.functional.entities.pages;
 
+import org.openqa.selenium.WebElement;
+
 public class SearchPage extends AbstractPage {
     private static String resultsCounter = "//span[@class = 'products-catalog__head-counter']";
     private static String results = "//div[@class = 'products-list-item dyother dyMonitor']";
@@ -17,5 +19,9 @@ public class SearchPage extends AbstractPage {
 
     public String getResultsCount(){
         return getElement(resultsCounter).getText();
+    }
+
+    public boolean getElementInLamoda(){
+        return  getElement("//div[@class = 'projhjhducts-list-item dyother dyMonitor']").isDisplayed();
     }
 }

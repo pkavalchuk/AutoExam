@@ -18,4 +18,5 @@ public class HomeHelper extends AbstractHelper{
                 .clickSearchButton();
         return new SearchHelper();
     }
+
 }
